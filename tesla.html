@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("tesla 1.png");
+            background-repeat: no-repeat;
+            background-size: 100%,100%;
+            transition: background-image 1.5s;
+        }
+        .img1{
+        
+            width: 290px;
+           
+            cursor: pointer;
+           
+            /* position: absolute; */
+        }
+       
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+       nav ul{
+           flex: 1;
+           /* width: 700px; */
+           margin-right: 75px;
+           text-align: center;
+          
+       }
+       nav ul li{
+           display: inline-block;
+           margin: 10px 15px;
+           cursor: pointer;
+           color:black;
+       }
+       /* .modern:hover{
+           color: rgb(46, 42, 42);
+           background-position: left;
+           transition: 1.5s ease-out;
+       } */
+       a{
+           text-decoration: none;
+           color:black;
+           border: 1px solid #fff;
+           border-radius: 30px;
+           padding: 10px 30px;
+           margin-right: 27px;
+       }
+       .imfo{
+           width: 100%;
+           padding: 0 7%;
+           display: flex;
+           align-items: center;
+           color: #fff;
+           position: fixed;
+           bottom: 35px;
+           left: 0;
+       }
+       .imfo div{
+           margin: 0 20px;
+       }
+       .imfo div h2{
+           font-size: 24px;
+           font-weight: 400;
+       }
+       .imfo .line{
+           width: 500px;
+           background: #fff;
+           height: 4px;
+
+       }
+       a:hover{
+          
+        transition: color 1s;
+           color: #666;       
+       }
+       #und{
+           margin-top: 109px;
+           margin-left: 540px;
+           cursor: pointer;
+           display: flex;
+       }
+
+       #change{
+           font-size: 35px;
+           color: black;
+       }
+    
+    
+
+       #change:hover{
+        color: darkgrey;
+           transition: 1.5s ease-out;
+       }
+       #id{
+           margin-top: 85px;
+           margin-left: -210px;
+           color: black;
+           
+       }
+       #tt{
+           text-decoration: underline;
+       }
+     
+       .modern:hover{
+           transition: color 1s;
+           color: #666;
+           
+       }
+       
+    </style>
+</head>
+<body>
+     
+         <nav>
+         <img src="tesla logo2.png" class="img1" alt="">
+          <ul class="ul">
+             <b><li class="modern" onclick="click1()"><div class="left">MODERN 1</div></li></b> 
+             <b><li class="modern" onclick="click2()"><div class="left">MODERN 2</div></li></b> 
+             <b><li class="modern" onclick="click3()"><div class="left">MODERN X</div></li></b> 
+             <b><li class="modern" onclick="click4()"><div class="left">MODERN Y</div></li></b> 
+          </ul>
+        <b><a href="teslaform.html">RESERVE NOW</a></b> 
+        </nav>
+        <div id="und">
+            <b><h2 id="change">MODERN 1</h2></b> 
+            <p id="id">Order Online for <b id="tt">Touchless Delivery</b></p>
+         </div>
+        <div class="imfo">
+            <div>
+                <h2 id="clan1">1.9 S</h2>
+                <P>60 mph</P>
+            </div>
+            <div>
+                <h2 id="clan2">200 mph</h2>
+                <P>Top Speed</P>
+            </div>
+            <div>
+                <h2 id="clan3">360 MI</h2>
+                <P>Max Range</P>
+            </div>
+            <div class="line">
+
+            </div>
+            <!-- <div>
+               <b><h2 id="change">MODERN 1</h2></b> 
+            </div> -->
+        </div>
+        <script>
+          function click1(){
+              let changes=document.getElementById('change');
+              let clanes1=document.getElementById('clan1');
+              let clanes2=document.getElementById('clan2');
+              let clanes3=document.getElementById('clan3');
+              document.body.style.backgroundImage="url('tesla 1.png')" 
+              changes.innerHTML="MODERN 1";
+              clanes1.innerHTML="1.9 S";
+              clanes2.innerHTML="200 mph";
+              clanes3.innerHTML="360 MI";
+
+              
+
+          }
+          function click2(){
+              let changes=document.getElementById('change');
+              let clanes1=document.getElementById('clan1');
+              let clanes2=document.getElementById('clan2');
+              let clanes3=document.getElementById('clan3');
+              document.body.style.backgroundImage="url('tesla 2.png')" 
+              changes.innerHTML="MODERN 2";
+              clanes1.innerHTML="2.1 S";
+              clanes2.innerHTML="250 mph";
+              clanes3.innerHTML="300 MI";
+
+          }
+          function click3(){
+              let changes=document.getElementById('change');
+              let clanes1=document.getElementById('clan1');
+              let clanes2=document.getElementById('clan2');
+              let clanes3=document.getElementById('clan3');
+              document.body.style.backgroundImage="url('tesla 3.png')" 
+              changes.innerHTML="MODERN X";
+              clanes1.innerHTML="1.0 S";
+              clanes2.innerHTML="309 mph";
+              clanes3.innerHTML="567 MI";
+          }
+          function click4(){
+              let changes=document.getElementById('change');
+              let clanes1=document.getElementById('clan1');
+              let clanes2=document.getElementById('clan2');
+              let clanes3=document.getElementById('clan3');
+              document.body.style.backgroundImage="url('tesla 4.png')" 
+              changes.innerHTML="MODERN Y";
+              clanes1.innerHTML="3.4 S";
+              clanes2.innerHTML="1000 mph";
+              clanes3.innerHTML="3600 MI";
+          }
+        </script>
+</body>
+</html>
